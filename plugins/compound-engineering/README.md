@@ -69,14 +69,14 @@ Agents are organized into categories for easier discovery.
 
 ### Workflow Commands
 
-Core workflow commands (use the short form for autocomplete):
+Core workflow commands use `workflows:` prefix to avoid collisions with built-in commands:
 
 | Command | Description |
 |---------|-------------|
-| `/plan` | Create implementation plans |
-| `/review` | Run comprehensive code reviews |
-| `/work` | Execute work items systematically |
-| `/compound` | Document solved problems to compound team knowledge |
+| `/workflows:plan` | Create implementation plans |
+| `/workflows:review` | Run comprehensive code reviews |
+| `/workflows:work` | Execute work items systematically |
+| `/workflows:compound` | Document solved problems to compound team knowledge |
 
 ### Utility Commands
 
@@ -88,7 +88,7 @@ Core workflow commands (use the short form for autocomplete):
 | `/heal-skill` | Fix skill documentation issues |
 | `/plan_review` | Multi-agent plan review in parallel |
 | `/prime` | Prime/setup command |
-| `/report-bug` | Report a bug in the compound-engineering plugin |
+| `/report-bug` | Report a bug in the plugin |
 | `/reproduce-bug` | Reproduce bugs using logs and console |
 | `/resolve_parallel` | Resolve TODO comments in parallel |
 | `/resolve_pr_parallel` | Resolve PR comments in parallel |

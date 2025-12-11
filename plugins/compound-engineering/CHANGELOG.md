@@ -5,6 +5,29 @@ All notable changes to the compound-engineering plugin will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.11.0] - 2025-12-10
+
+### Changed
+
+- **Command naming convention** - Workflow commands now use `workflows:` prefix to avoid collisions with built-in Claude Code commands:
+  - `/workflows:plan` (was `/plan`)
+  - `/workflows:review` (was `/review`)
+  - `/workflows:work` (was `/work`)
+  - `/workflows:compound` (was `/compound`)
+
+  This ensures no collision with Claude Code's built-in `/plan` command.
+
+### Fixed
+
+- **`heal-skill.md`** - Added missing `name:` frontmatter field
+- **`create-agent-skill.md`** - Added missing `name:` frontmatter field
+- **`prime.md`** - Rewrote corrupted command file (was incorrectly containing CLAUDE.md content)
+- **Playwright MCP alias** - Shortened from `playwright` to `pw` to stay under 64-char API limit
+
+### Removed
+
+- **`codify.md`** - Removed deprecated command (replaced by `/compound`)
+
 ## [2.10.0] - 2025-12-10
 
 ### Added
